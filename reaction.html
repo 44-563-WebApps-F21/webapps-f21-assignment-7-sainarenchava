@@ -36,8 +36,7 @@
     }
 
     function startTime() {
-      let counter = Math.round(Math.random() * (10 - 2) + 2);
-
+        countdown = Math.floor(Math.random()*(max-min+1)+min)
       for (let index = 0; index < counter; index++) {
         setTimeout(function () {
           document.getElementById("countdown").innerHTML = "Count " + index;
@@ -54,5 +53,6 @@
         }
       }, (counter - 1) * 1000);
     }
+    
   </script>
 </html>

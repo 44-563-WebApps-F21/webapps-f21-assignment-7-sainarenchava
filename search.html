@@ -164,6 +164,18 @@ function distance(pos1,pos2)
             }
 
         }
+        function reset() {
+            triesCount = 0;
+            animalLocation = Math.round(Math.random() * (23));
+            document.getElementById("tries").innerHTML = "Number of tries is zero";
+            distanceOfAnimal = "unknown"
+            document.getElementById("distance").innerHTML = "Distance is " + distanceOfAnimal;
+            for (var i = 0; i < 24; i++) {
+
+                document.getElementById(ids[i]).src = "tree.jpg";
+            }
+
+        }
         
 </script>
 </body>
